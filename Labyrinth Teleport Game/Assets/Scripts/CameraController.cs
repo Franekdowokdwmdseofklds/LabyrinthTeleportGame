@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private float sensivity = 100;
+
+    private Transform playerBody;
+    private float xRotation = 0;
+
     void Start()
     {
-        
+        playerBody = transform.parent;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
